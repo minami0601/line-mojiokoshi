@@ -6,6 +6,7 @@ import { msgError } from '~lineBot/notice-messages/other'
 
 import { followUsecase } from './follow'
 import { messagesHandler } from './messages'
+import { postbackHandler } from './postback'
 
 export const handlers = async (event: WebhookEvent): Promise<void> => {
   try {
@@ -14,6 +15,8 @@ export const handlers = async (event: WebhookEvent): Promise<void> => {
         return await followUsecase(event)
       case 'message':
         return await messagesHandler(event)
+      case 'postback':
+        return await postbackHandler(event)
       default:
     }
   } catch (err) {
