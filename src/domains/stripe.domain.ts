@@ -24,8 +24,8 @@ export const getStripeCheckoutURL = async (props: CheckoutURLProps): Promise<{ u
       ],
       payment_method_types: ['card'],
       mode,
-      success_url: 'https://lin.ee/F2H8dsW',
-      cancel_url: 'https://lin.ee/F2H8dsW'
+      success_url: 'https://lin.ee/yGQsVIA',
+      cancel_url: 'https://lin.ee/yGQsVIA'
     })
 
     if (url === null) {
