@@ -13,3 +13,8 @@ export const GOOGLE_PROJECT_ID = process.env.GOOGLE_PROJECT_ID as string
 // Stripe
 export const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY as string
 export const STRIPE_WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET as string
+
+// OpenAI
+
+export const OPENAI_API_KEY = process.env.OPENAI_API_KEY as string
+

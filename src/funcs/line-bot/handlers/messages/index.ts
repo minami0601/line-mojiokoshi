@@ -5,10 +5,13 @@ import { errorLogger } from '~/utils/util'
 import { msgOther } from '~lineBot/notice-messages/other'
 
 import { messageImageHandler } from './image'
+import { messageTextHandler } from './text'
 
 export const messagesHandler = async (event: MessageEvent): Promise<void> => {
   try {
     switch (event.message.type) {
+      case 'text':
+        return await messageTextHandler(event)
       case 'image':
         return await messageImageHandler(event)
       default:

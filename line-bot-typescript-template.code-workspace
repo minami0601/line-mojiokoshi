@@ -5,6 +5,15 @@
     },
     {
       "path": "./src/funcs/line-bot"
+    },
+    {
+      "path": "./src/funcs/stripe-webhook"
+    },
+    {
+      "path": "./src/migrations"
+    },
+    {
+      "path": "./src/libs"
     }
   ],
   "settings": {
